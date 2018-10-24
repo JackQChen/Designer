@@ -7,16 +7,16 @@
         SnapsToDevicePixels="True"
 		Title="ProcessDesigner"        
 		Height="850" Width="1100">
-	
+
 
     <Window.InputBindings>
         <KeyBinding Key="Del"
                     Command="{Binding DeleteSelectedItemsCommand}" />
     </Window.InputBindings>
-	
-	<DockPanel Margin="0">
-		<ToolBar Height="0" DockPanel.Dock="Top">
-			<Button ToolTip="New"
+
+    <DockPanel Margin="0">
+        <ToolBar Height="0" DockPanel.Dock="Top">
+            <Button ToolTip="New"
                     Content="New"
 					Margin="8,0,3,0"
                     Command="{Binding CreateNewDiagramCommand}"/>
@@ -46,12 +46,12 @@
 
 
         </ToolBar>
-		
-		<Grid Margin="0,5,0,0">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="230" />
-				<ColumnDefinition />
-			</Grid.ColumnDefinitions>
+
+        <Grid Margin="0,5,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
 
             <!-- ToolBox Control -->
             <local:ToolBoxControl Grid.Column="0"
@@ -62,12 +62,12 @@
 						  VerticalAlignment="Stretch"
 						  Background="Transparent"
 						  Width="3" />
-        
+
             <!-- Diagram Control -->
             <s:DiagramControl Grid.Column="1"
                                   DataContext="{Binding DiagramViewModel}"
                                   Margin="3,1,0,0" />
         </Grid>
-	</DockPanel>    
-	
+    </DockPanel>
+
 </Window>

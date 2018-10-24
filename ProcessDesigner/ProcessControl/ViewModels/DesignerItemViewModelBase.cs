@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System;
 
 namespace ProcessControl
 {
@@ -13,6 +14,7 @@ namespace ProcessControl
 
         private static double itemWidth = 65;
         private static double itemHeight = 65;
+        public static Dictionary<Type, string> dicImageUrl = new Dictionary<Type, string>();
 
         public DesignerItemViewModelBase(int id, IDiagramViewModel parent, double left, double top)
             : base(id, parent)
@@ -132,9 +134,7 @@ namespace ProcessControl
         {
             connectors.Add(new FullyCreatedConnectorInfo(this, ConnectorOrientation.Left));
             connectors.Add(new FullyCreatedConnectorInfo(this, ConnectorOrientation.Right));
-            var attributes = this.GetType().GetCustomAttributes(typeof(ImageUrlAttribute), true);
-            if (attributes.Length > 0)
-                imageUrl = ((ImageUrlAttribute)attributes[0]).ImageUrl;
+            imageUrl = dicImageUrl[this.GetType()];
             editorService = ApplicationServicesProvider.Instance.Provider.EditorService;
             ShowEditorCommand = new SimpleCommand(ExecuteShowEditorCommand);
             this.ShowConnectors = false;

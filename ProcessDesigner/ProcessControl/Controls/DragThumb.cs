@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Controls.Primitives;
 
-namespace ProcessControl.Controls
+namespace ProcessControl
 {
     public class DragThumb : Thumb
     {

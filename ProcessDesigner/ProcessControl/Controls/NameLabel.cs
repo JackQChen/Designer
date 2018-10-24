@@ -6,13 +6,12 @@ namespace ProcessControl
     {
         protected override void OnMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs e)
         {
-            var model = this.DataContext as DesignerItemViewModelBase;
-            PopupWindow window = new PopupWindow();
-            //window.Label = model.Label;
-            window.Owner = Application.Current.MainWindow;
-            if (window.ShowDialog() == true)
+            var model = new NameLabelModel();
+            var data = this.DataContext as DesignerItemViewModelBase;
+            model.Label = data.Label;
+            if (ApplicationServicesProvider.Instance.Provider.EditorService.ShowDialog(model) == true)
             {
-                //model.Label = window.Label;
+                data.Label = model.Label;
             }
             base.OnMouseDoubleClick(e);
         }

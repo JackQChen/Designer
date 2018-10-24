@@ -11,13 +11,10 @@
                 <ResourceDictionary Source="pack://application:,,,/ProcessControl;component/Resources/Styles/Expander.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/ProcessControl;component/Resources/Styles/GroupBox.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/ProcessControl;component/Resources/Styles/ToolTip.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/ProcessControl;component/Resources/Styles/LabelEditor.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/ProcessControl;component/Resources/Styles/ScrollViewer.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/ProcessControl;component/Resources/Styles/ZoomBox.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/ProcessControl;component/Resources/Styles/DesignerItems.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/ProcessControl;component/Resources/Styles/PopupWindow.xaml" />
-
-                <!-- CustomControl Dll resources, you need all of these -->
-                <ResourceDictionary Source="pack://application:,,,/FileAccess;component/Resources/Styles/FileReadDataTemplate.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -60,6 +60,13 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Popups\PopupWindow.xaml.cs">
+      <DependentUpon>PopupWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ApplicationServices.cs" />
+    <Compile Include="Services\Implentation\WPFEditorService.cs" />
+    <Compile Include="Services\Implentation\WPFMessageBoxService.cs" />
+    <Compile Include="Services\Implentation\WPFStorageService.cs" />
     <Compile Include="UserControls\ToolBoxControl.xaml.cs">
       <DependentUpon>ToolBoxControl.xaml</DependentUpon>
     </Compile>
@@ -94,6 +101,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Popups\PopupWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserControls\ToolBoxControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -104,10 +115,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FileAccess\FileAccess.csproj">
-      <Project>{B74523D0-69E2-4486-9810-F1AC5ECAD0E6}</Project>
-      <Name>FileAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ProcessControl\ProcessControl.csproj">
       <Project>{74872A86-6809-476B-95AB-6F3512317059}</Project>
       <Name>ProcessControl</Name>

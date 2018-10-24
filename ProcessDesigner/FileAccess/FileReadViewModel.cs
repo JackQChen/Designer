@@ -3,7 +3,7 @@ using ProcessControl;
 
 namespace FileAccess
 {
-    [ImageUrl("/FileAccess;component/Images/File.png")]
+    [Plugin(ImageUrl = "Images/File.png", DataTemplatePath = "Styles/FileReadDataTemplate.xaml")]
     public class FileReadViewModel : DesignerItemViewModelBase
     {
         public FileReadModel model = new FileReadModel();
@@ -26,8 +26,9 @@ namespace FileAccess
 
         public override void ExecuteShowEditorCommand(object parameter)
         {
+            var param = parameter as FileReadViewModel;
             FileReadModel data = new FileReadModel();
-            data.FilePath = "";
+            data.FilePath = param.model.FilePath;
             if (this.ShowEditor(data))
             {
                 this.model.FilePath = data.FilePath;

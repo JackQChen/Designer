@@ -22,9 +22,9 @@ namespace ProcessDesigner
         private DiagramViewModel diagramViewModel = new DiagramViewModel();
         private bool isBusy = false;
 
-
         public MainWindowViewModel()
         {
+            ApplicationServicesProvider.Instance.SetNewServiceProvider(new ServiceProvider());
             messageBoxService = ApplicationServicesProvider.Instance.Provider.MessageBoxService;
             storageService = ApplicationServicesProvider.Instance.Provider.StorageService;
 

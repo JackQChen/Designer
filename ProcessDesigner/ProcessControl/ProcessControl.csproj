@@ -88,11 +88,10 @@
     <Compile Include="AttachedProperties\DragAndDropProps.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AttachedProperties\ImageUrlAttribute.cs" />
+    <Compile Include="AttachedProperties\PluginAttribute.cs" />
     <Compile Include="AttachedProperties\ItemConnectProps.cs" />
     <Compile Include="AttachedProperties\SelectionProps.cs" />
     <Compile Include="Controls\NameLabel.cs" />
-    <Compile Include="Controls\PopupWindow.cs" />
     <Compile Include="Converters\ConnectionPathConverter.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Helpers\WeakINPCEventHandler.cs" />
@@ -103,9 +102,6 @@
     <Compile Include="Services\Contracts\IMessageBoxService.cs" />
     <Compile Include="Services\Contracts\IEditorService.cs" />
     <Compile Include="Services\Contracts\IStorageService.cs" />
-    <Compile Include="Services\Implentation\WPFMessageBoxService.cs" />
-    <Compile Include="Services\Implentation\WPFEditorService.cs" />
-    <Compile Include="Services\Implentation\WPFStorageService.cs" />
     <Compile Include="UserControls\DiagramControl.xaml.cs">
       <DependentUpon>DiagramControl.xaml</DependentUpon>
     </Compile>
@@ -115,6 +111,7 @@
     <Compile Include="Helpers\ToolBoxData.cs" />
     <Compile Include="ViewModels\DiagramViewModel.cs" />
     <Compile Include="ViewModels\IDiagramViewModel.cs" />
+    <Compile Include="ViewModels\NameLabelModel.cs" />
     <Compile Include="ViewModels\PartCreatedConnectionInfo.cs" />
     <Compile Include="StyleSelectors\DesignerItemsControlItemStyleSelector.cs" />
     <Compile Include="ViewModels\ConnectorViewModel.cs" />
@@ -128,9 +125,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Styles\PopupWindow.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Resources\Styles\LabelEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControls\DiagramControl.xaml">
       <Generator>MSBuild:Compile</Generator>

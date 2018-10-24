@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,7 +59,7 @@
     <Resource Include="Images\File.png" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Resources\Styles\FileReadDataTemplate.xaml">
+    <Page Include="Styles\FileReadDataTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

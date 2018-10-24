@@ -3,19 +3,16 @@
                     xmlns:local="clr-namespace:FileAccess">
     <!-- DataTemplate for Popup look and feel -->
     <DataTemplate DataType="{x:Type local:FileReadModel}">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Label Grid.Row="0"
+        <StackPanel Orientation="Horizontal"
+                    Margin="10">
+            <Label
                     Content="文件路径"
                     Margin="5" />
-            <TextBox Grid.Row="1"
-                        HorizontalAlignment="Left"
+            <TextBox
+                        HorizontalAlignment="Center"
                         Text="{Binding FilePath}"
                         Width="150"
                         Margin="5" />
-        </Grid>
+        </StackPanel>
     </DataTemplate>
 </ResourceDictionary>

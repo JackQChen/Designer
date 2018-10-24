@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows;
+﻿using System.Windows;
+using ProcessControl;
 
 
 
-namespace ProcessControl
+namespace ProcessDesigner
 {
     /// <summary>
     /// This class implements the IMessageBoxService for WPF purposes.
