@@ -5,7 +5,7 @@
         xmlns:local="clr-namespace:ProcessDesigner"
         WindowState="Maximized"
         SnapsToDevicePixels="True"
-		Title="Diagram Designer"        
+		Title="ProcessDesigner"        
 		Height="850" Width="1100">
 	
 
@@ -15,7 +15,7 @@
     </Window.InputBindings>
 	
 	<DockPanel Margin="0">
-		<ToolBar Height="35" DockPanel.Dock="Top">
+		<ToolBar Height="0" DockPanel.Dock="Top">
 			<Button ToolTip="New"
                     Content="New"
 					Margin="8,0,3,0"

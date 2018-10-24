@@ -10,7 +10,7 @@
     <Border BorderBrush="LightGray"
             BorderThickness="1">
         <StackPanel>
-            <Expander Header="Symbols"
+            <Expander Header="Tools"
                       IsExpanded="True">
                 <ItemsControl ItemsSource="{Binding ToolBoxItems}">
                     <ItemsControl.Template>
