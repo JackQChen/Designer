@@ -10,7 +10,6 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-
         <ContentControl Grid.Row="0"
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Stretch"

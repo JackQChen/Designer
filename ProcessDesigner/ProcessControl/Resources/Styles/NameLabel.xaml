@@ -3,16 +3,22 @@
                     xmlns:s="clr-namespace:ProcessControl">
     <!-- DataTemplate for Popup look and feel -->
     <DataTemplate DataType="{x:Type s:NameLabelModel}">
-        <StackPanel Orientation="Horizontal"
-                    Margin="10">
-            <Label
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0"
+                Orientation="Horizontal"
+                Margin="10">
+                <Label
                     Content="步骤名称"
                     Margin="5" />
-            <TextBox
+                <TextBox
                         HorizontalAlignment="Center"
                         Text="{Binding Label}"
                         Width="150"
                         Margin="5" />
-        </StackPanel>
+            </StackPanel>
+        </Grid>
     </DataTemplate>
 </ResourceDictionary>
