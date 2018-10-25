@@ -98,6 +98,11 @@
     <Compile Include="Helpers\PointHelper.cs" />
     <Compile Include="Messenger\Mediator.cs" />
     <Compile Include="Messenger\MediatorMessageSinkAttribute.cs" />
+    <Compile Include="Models\Connection.cs" />
+    <Compile Include="Models\DesignerItem.cs" />
+    <Compile Include="Models\DiagramItem.cs" />
+    <Compile Include="Models\DesignerItemBase.cs" />
+    <Compile Include="Models\Orientation.cs" />
     <Compile Include="Services\ApplicationServicesProvider.cs" />
     <Compile Include="Services\Contracts\IMessageBoxService.cs" />
     <Compile Include="Services\Contracts\IEditorService.cs" />
@@ -111,7 +116,7 @@
     <Compile Include="Helpers\ToolBoxData.cs" />
     <Compile Include="ViewModels\DiagramViewModel.cs" />
     <Compile Include="ViewModels\IDiagramViewModel.cs" />
-    <Compile Include="ViewModels\NameLabelModel.cs" />
+    <Compile Include="ViewModels\NameLabelViewModel.cs" />
     <Compile Include="ViewModels\PartCreatedConnectionInfo.cs" />
     <Compile Include="StyleSelectors\DesignerItemsControlItemStyleSelector.cs" />
     <Compile Include="ViewModels\ConnectorViewModel.cs" />

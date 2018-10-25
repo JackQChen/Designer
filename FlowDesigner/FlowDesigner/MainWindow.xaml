@@ -15,7 +15,7 @@
     </Window.InputBindings>
 
     <DockPanel Margin="0">
-        <ToolBar Height="0" DockPanel.Dock="Top">
+        <ToolBar Height="35" DockPanel.Dock="Top">
             <Button ToolTip="New"
                     Content="New"
 					Margin="8,0,3,0"

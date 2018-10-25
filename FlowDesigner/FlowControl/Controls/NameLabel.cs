@@ -6,12 +6,12 @@ namespace FlowControl
     {
         protected override void OnMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs e)
         {
-            var model = new NameLabelModel();
+            var viewModel = new NameLabelViewModel();
             var data = this.DataContext as DesignerItemViewModelBase;
-            model.Label = data.Label;
-            if (ApplicationServicesProvider.Instance.Provider.EditorService.ShowDialog(model) == true)
+            viewModel.Label = data.Label;
+            if (ApplicationServicesProvider.Instance.Provider.EditorService.ShowDialog(viewModel) == true)
             {
-                data.Label = model.Label;
+                data.Label = viewModel.Label;
             }
             base.OnMouseDoubleClick(e);
         }

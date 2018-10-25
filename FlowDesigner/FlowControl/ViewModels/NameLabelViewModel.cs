@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FlowControl
 {
-    public class NameLabelModel
+    public class NameLabelViewModel
     {
         public string Label { get; set; }
     }
