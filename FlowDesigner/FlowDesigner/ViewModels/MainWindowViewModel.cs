@@ -180,12 +180,9 @@ namespace FlowDesigner
 
                     foreach (var model in DiagramViewModel.Items)
                     {
-                        DiagramItem item = new DiagramItem()
-                        {
-                            Id = model.Id
-                        };
+                        DiagramItemData item = new DiagramItemData(model.Id, model.GetType());
                         storageService.SaveDiagramItem(item);
-                        wholeDiagramToSave.DesignerItems.Add(new DiagramItemData(item.Id, model.GetType()));
+                        wholeDiagramToSave.DesignerItems.Add(item);
                     }
                     //Save all connections which should now have their Connection.DataItems filled in with correct Ids
                     foreach (var connectionVM in DiagramViewModel.Items.OfType<ConnectorViewModel>())
@@ -354,7 +351,7 @@ namespace FlowDesigner
                 var diagramItemToRemoveFromParent = wholeDiagramToAdjust.DesignerItems.Where(x => x.ItemId == itemToDelete.Id).Single();
                 wholeDiagramToAdjust.DesignerItems.Remove(diagramItemToRemoveFromParent);
             }
-            storageService.SaveDiagramItem(wholeDiagramToAdjust);
+            storageService.SaveDiagram(wholeDiagramToAdjust);
         }
 
     }

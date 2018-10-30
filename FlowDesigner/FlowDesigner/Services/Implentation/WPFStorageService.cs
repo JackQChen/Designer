@@ -20,13 +20,14 @@ namespace FlowDesigner
         {
             return 0;
         }
-
+        List<DiagramItem> listSave = new List<DiagramItem>();
         public int SaveDiagram(DiagramItem diagramItem)
         {
-            return 0;
+            listSave.Add(diagramItem);
+            return listSave.Count - 1;
         }
 
-        public int SaveDiagramItem(DiagramItem diagramItem)
+        public int SaveDiagramItem(DiagramItemData diagramItemData)
         {
             return 0;
         }
@@ -39,7 +40,7 @@ namespace FlowDesigner
 
         public DiagramItem FetchDiagram(int itemId)
         {
-            return null;
+            return listSave[itemId];
         }
 
         public Connection FetchConnection(int connectionId)

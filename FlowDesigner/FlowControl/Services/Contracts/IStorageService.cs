@@ -14,7 +14,7 @@ namespace FlowControl
         //save methods
         int SaveConnection(Connection connection);
         int SaveDiagram(DiagramItem diagramItem);
-        int SaveDiagramItem(DiagramItem diagramItem);
+        int SaveDiagramItem(DiagramItemData diagramItemData);
 
         //fetch methods
         IEnumerable<DiagramItem> FetchAllDiagram();
